@@ -21,7 +21,7 @@ In the command line
 
 #### Windows OS
 
-Adhere to [this](https://www.pythontutorial.net/python-basics/install-pipenv-windows/)
+The same instructions for Mac OS **should** work for windows, but if it doesn't, follow the instructions [here](https://www.pythontutorial.net/python-basics/install-pipenv-windows/)
 
 ### Usage
 
