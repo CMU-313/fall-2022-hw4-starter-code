@@ -37,7 +37,7 @@ This should also update `Pipfile` and add the downloaded package under `[package
 
 Working in teams can be a hassle since different team members might be using different versions of Python. To avoid this issue, you can create a python virtual environment, so you and your team will be working with the same version of Python and PyPi packages.
 Run `pipenv shell` in your command line to activate this project's virtual environment.
-To learn more about virtual environments, read [this article](https://docs.python-guide.org/dev/virtualenvs/#using-installed-packages).
+If you want to learn more about virtual environments, read [this article](https://docs.python-guide.org/dev/virtualenvs/#using-installed-packages).
 You can also specify which version of python you and your team should use under `[requires]` in `Pipfile`.
 
 ## Jupyter Notebook
