@@ -27,7 +27,7 @@ Adhere to [this](link)
 
 #### Downloading Packages
 
-The repository contain `Pipfile` that declares which packages are necessary to run the `model_biuld.ipnyb`. To install packages declared by the Pipfile, run `pipenv install` in the command line.
+The repository contains `Pipfile` that declares which packages are necessary to run the `model_biuld.ipnyb`. To install packages declared by the Pipfile, run `pipenv install` in the command line.
 
 You might want to use additional packages throughout the assignment.
 To do so, run `pipenv install [PACKAGE_NAME]`, as you would install python packages using pip.
