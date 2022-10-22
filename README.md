@@ -1,4 +1,4 @@
-# Software Engineering for Machine Learning Assignment
+# HW4 Starter Code and Instructions
 
 Please consult the [homework assignment](https://cmu-313.github.io//assignments/hw4) for additional context and instructions for this code.
 
