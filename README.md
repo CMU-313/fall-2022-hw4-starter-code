@@ -27,7 +27,7 @@ Adhere to [this](link)
 
 #### Downloading Packages
 
-The repository contains `Pipfile` that declares which packages are necessary to run the `model_biuld.ipnyb`. To install packages declared by the Pipfile, run `pipenv install` in the command line.
+The repository contains `Pipfile` that declares which packages are necessary to run the `model_build.ipnyb`. To install packages declared by the Pipfile, run `pipenv install` in the command line from the root directory.
 
 You might want to use additional packages throughout the assignment.
 To do so, run `pipenv install [PACKAGE_NAME]`, as you would install python packages using pip.
@@ -42,7 +42,7 @@ You can also specify which version of python you and your team should use under 
 
 ## Jupyter Notebook
 
-It's a good idea to run your notebook in the virtual environment from pipenv.
+You should run your notebook in the virtual environment from pipenv.
 To do so, in the pipenv virtual environment, run `jupyter notebook`.
 
 ## API Endpoints
