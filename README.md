@@ -4,7 +4,7 @@ Please consult the [homework assignment](https://cmu-313.github.io//assignments/
 
 ## pipenv
 
-[pipenv](https://pipenv.pypa.io/en/latest/) is a packaging tool for Python that solves some common problems associated with the typical workflow using pip, virtualenv, and the good old requirements.txt.
+[pipenv](https://pipenv.pypa.io/en/latest) is a packaging tool for Python that solves some common problems associated with the typical workflow using pip, virtualenv, and the good old requirements.txt.
 
 ### Installation
 
@@ -15,37 +15,58 @@ Please consult the [homework assignment](https://cmu-313.github.io//assignments/
 
 #### Mac OS
 
-Run
-`sudo -H pip install -U pipenv`
-In the command line
+To install pipenv from the command line, execute the following:
+
+```terminal
+sudo -H pip install -U pipenv
+```
 
 #### Windows OS
 
-The same instructions for Mac OS **should** work for windows, but if it doesn't, follow the instructions [here](https://www.pythontutorial.net/python-basics/install-pipenv-windows/)
+The same instructions for Mac OS **should** work for windows, but if it doesn't, follow the instructions [here](https://www.pythontutorial.net/python-basics/install-pipenv-windows).
 
 ### Usage
 
 #### Downloading Packages
 
-The repository contains `Pipfile` that declares which packages are necessary to run the `model_build.ipnyb`. To install packages declared by the Pipfile, run `pipenv install` in the command line from the root directory.
+The repository contains `Pipfile` that declares which packages are necessary to run the `model_build.ipnyb`.
+To install packages declared by the Pipfile, run `pipenv install` in the command line from the root directory.
 
 You might want to use additional packages throughout the assignment.
 To do so, run `pipenv install [PACKAGE_NAME]`, as you would install python packages using pip.
 This should also update `Pipfile` and add the downloaded package under `[packages]`.
+Note that `Pipfile.lock` will also be updated with the specific versions of the dependencies that were installed.
+Any changes to `Pipfile.lock` should also be committed to your Git repository to ensure that all of your team is using the same dependency versions.
 
 #### Virtual Environment
 
-Working in teams can be a hassle since different team members might be using different versions of Python. To avoid this issue, you can create a python virtual environment, so you and your team will be working with the same version of Python and PyPi packages.
+Working in teams can be a hassle since different team members might be using different versions of Python.
+To avoid this issue, you can create a python virtual environment, so you and your team will be working with the same version of Python and PyPi packages.
 Run `pipenv shell` in your command line to activate this project's virtual environment.
+If you have more than one version of Python installed on your machine, you can use pipenv's `--python` option to specify which version of Python should be used to create the virtual environment.
 If you want to learn more about virtual environments, read [this article](https://docs.python-guide.org/dev/virtualenvs/#using-installed-packages).
-You can also specify which version of python you and your team should use under `[requires]` in `Pipfile`.
+You can also specify which version of python you and your team should use under the `[requires]` section in `Pipfile`.
 
 ## Jupyter Notebook
 
 You should run your notebook in the virtual environment from pipenv.
-To do so, in the pipenv virtual environment, run `jupyter notebook`.
+To do, you should run the following command from the root of your repository:
+
+```terminal
+pipenv run jupyter notebook
+```
 
 ## API Endpoints
 
-To start your Flask API server, run `python apps/app.py`.
-You can alter the port number in `app.run(host="0.0.0.0", debug=True, port=80)`.
+You should also use pipenv to run your Flask API server.
+To do so, execute the following command from the root of your repository:
+
+```terminal
+pipenv run python apps/app.py
+```
+
+You can alter the port number that is used by the Flask server by changing the following line in `apps/app.py`:
+
+```python
+app.run(host="0.0.0.0", debug=True, port=80)
+```
