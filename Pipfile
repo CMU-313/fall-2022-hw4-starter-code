@@ -9,6 +9,7 @@ numpy = "*"
 sklearn = "*"
 joblib = "*"
 flask = "*"
+pytest = "*"
 
 [dev-packages]
 pandas = "*"

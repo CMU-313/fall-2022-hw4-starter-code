@@ -59,14 +59,22 @@ pipenv run jupyter notebook
 ## API Endpoints
 
 You should also use pipenv to run your Flask API server.
-To do so, execute the following command from the root of your repository:
+To do so, execute the following command from the `app` directory:
 
 ```terminal
-pipenv run python apps/app.py
+pipenv run python app.py
 ```
 
-You can alter the port number that is used by the Flask server by changing the following line in `apps/app.py`:
+You can alter the port number that is used by the Flask server by changing the following line in `app/app.py`:
 
 ```python
 app.run(host="0.0.0.0", debug=True, port=80)
+```
+
+## Testing
+
+To run tests, execute the following command from the `app` directory:
+
+```terminal
+pytest
 ```
