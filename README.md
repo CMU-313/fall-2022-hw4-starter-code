@@ -78,3 +78,9 @@ To run tests, execute the following command from the `app` directory:
 ```terminal
 pytest
 ```
+
+If you're not in the Pipenv shell, then execute the following command from the `app` directory:
+
+```terminal
+pipenv run pytest
+```
