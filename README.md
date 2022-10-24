@@ -12,7 +12,7 @@ Please consult the [homework assignment](https://cmu-313.github.io//assignments/
 
 - We recommend Python version > 3.7 be installed
 - pip package manager is updated to latest version
-- For additional resources, check out this [link](https://pipenv-fork.readthedocs.io/en/latest/index.html)
+- For additional resources, check out [this link](https://pipenv-fork.readthedocs.io/en/latest/install.html#installing-pipenv)
 
 #### Mac OS
 
