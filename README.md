@@ -79,6 +79,11 @@ To run:
 pipenv run flask run
 ```
 
+Or if you're in the pipenv shell, run:
+```terminal
+flask run
+```
+
 You can alter the port number that is used by the Flask server by changing the following line in `app/app.py`:
 
 ```python
