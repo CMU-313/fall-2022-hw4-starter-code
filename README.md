@@ -10,7 +10,7 @@ Please consult the [homework assignment](https://cmu-313.github.io//assignments/
 
 #### Prereqs
 
-- We recommend Python version > 3.7 be installed
+- The version of Python you and your team will be using (version greater than 3.8)
 - pip package manager is updated to latest version
 - For additional resources, check out [this link](https://pipenv-fork.readthedocs.io/en/latest/install.html#installing-pipenv)
 
@@ -60,10 +60,28 @@ pipenv run jupyter notebook
 ## API Endpoints
 
 You should also use pipenv to run your Flask API server.
-To do so, execute the following command from the `app` directory:
+To do so, execute the following commands from the `app` directory in the pip venv shell.
 
+
+Set an environment variable for FLASK_APP.
+For Mac and Linux:
 ```terminal
-pipenv run python app.py
+export FLASK_APP=app.py
+```
+
+For Windows:
+```terminal
+set FLASK_APP=app
+```
+
+To run:
+```terminal
+pipenv run flask run
+```
+
+Or if you're in the pipenv shell, run:
+```terminal
+flask run
 ```
 
 You can alter the port number that is used by the Flask server by changing the following line in `app/app.py`:
